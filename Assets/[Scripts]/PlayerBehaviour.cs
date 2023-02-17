@@ -46,12 +46,14 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Cloud"))
         {
-            //take demage
             //play the thunder sound
+            other.gameObject.GetComponent<AudioSource>().Play();
+            //take demage
         }
         if (other.gameObject.CompareTag("Island"))
         {
             //play the yea sound
+            other.gameObject.GetComponent<AudioSource>().Play();
             //gain points
         }
 
